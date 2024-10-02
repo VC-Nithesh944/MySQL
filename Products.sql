@@ -1,7 +1,7 @@
 create database Store;
 use Store;
 
-create table Products ( Product_id int(4), Product_code char(3), Product_name varchar(20), Quantity int(10), Price int(10), primary key (Product_id));
+create table Products ( Product_id int(4), Product_code char(3), Product_name varchar(20), Quantity int(10), Price int(10), primary key (Product_id)); 
 
 desc Products;
 
