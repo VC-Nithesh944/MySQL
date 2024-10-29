@@ -91,4 +91,6 @@ select D.Customer_name From Depositer D where D.Acc_no in
 Delete from Bank_account where Acc_no in (select ba.Acc_no from Bank_account Ba where Ba.Branch_name in 
 (select B.Branch_name from Branch B where Branch_city = "Bombay"));
 
-select * from Bank_Account;
+-- --> update the balance of all accounts by 5%.
+Update Bank_account set balance = balance + balance *0.05;
+select balance from Bank_account;
